@@ -1,0 +1,92 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.env/
+.venv/
+.ENV/
+
+# Byte-compiled
+*.pyc
+
+# Pip requirements
+pip-log.txt
+
+# -----------------------------
+# FastAPI + Uvicorn
+# -----------------------------
+*.pid
+*.db
+*.sqlite3
+instance/
+*.log
+
+# -----------------------------
+# ChromaDB storage
+# -----------------------------
+chroma_db/
+chroma/
+db/
+index/
+*.bin
+
+# -----------------------------
+# Scraped data / cache
+# -----------------------------
+cache/
+data/
+tmp/
+temp/
+*.tmp
+
+# -----------------------------
+# IDE / Editor
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------------
+# Logs
+# -----------------------------
+logs/
+*.log
+*.out
+
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Jupyter Notebooks
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Environment files
+# -----------------------------
+.env
+.env.local
+.env.*.local
+
+# -----------------------------
+# Other
+# -----------------------------
+*.bak
+*.old
