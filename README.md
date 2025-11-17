@@ -39,6 +39,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 รัน UI ด้วยคำสั่ง:
 
 ```bash
+cd .\frontend\
 streamlit run streamlit_app/app.py
 ```
 
@@ -61,6 +62,7 @@ uvicorn app.main:app --reload --port 8000
 ### Terminal 2 – Streamlit
 
 ```bash
+cd .\frontend\
 streamlit run streamlit_app/app.py
 ```
 
