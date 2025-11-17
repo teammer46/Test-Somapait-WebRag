@@ -19,8 +19,6 @@ from app.model.schemas import (
 )
 
 
-
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     print("🔍 Checking Chroma DB...")
@@ -95,7 +93,6 @@ def chat_api(payload: ChatPayload):
 def list_history_api():
     return list_histories()
 
-
 # --------------------------
 # API: Load history (by ID)
 # --------------------------
@@ -104,7 +101,6 @@ def list_history_api():
 def load_history_api(title: str):
     messages = load_history_by_title(title)
     return {"messages": messages}
-
 
 # --------------------------
 # API: Create Room
@@ -115,7 +111,6 @@ def create_room_api(payload: CreateRoomPayload):
     save_history_mongo(payload.title, chat=None)  # สร้างห้องเปล่า
     return {"title": payload.title}
 
-
 # --------------------------
 # API: Delete History
 # --------------------------
@@ -124,7 +119,6 @@ def create_room_api(payload: CreateRoomPayload):
 def delete_history_api(title: str):
     delete_history(title)
     return {"status": "deleted", "title": title}
-
 
 # --------------------------
 # API: Rename Room
