@@ -7,6 +7,8 @@
 
 * **FastAPI** สำหรับ Backend API
 * **Streamlit** สำหรับ Frontend UI
+* **MongoDB** สำหรับจัดเก็บประวัติการสนทนาและข้อมูลต่าง ๆ
+* **ChromaDB** สำหรับจัดเก็บเวกเตอร์และใช้ในระบบ RAG
 
 ---
 
